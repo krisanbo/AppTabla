@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AppTabla</string>
-</resources>
+    <string name="et_numero">Introduce un numero del 1 al 10</string>
+    <string name="tv1">Tablas de multiplicar</string>
+    <string name="tv_datos"></string>
+    <string name="rbSD">guardar SD</string>
+    <string name="rbIn">guardar IN</string>
+    <string name="bt1">calcular</string>
+    <string name="bt2">guardar</string>
+    </resources>

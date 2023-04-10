@@ -6,13 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/et_numero"
+        android:layout_width="259dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/et_numero"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <RadioButton
+        android:id="@+id/rbSD"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/rbSD"
+        app:layout_constraintEnd_toStartOf="@+id/rbIN"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datos" />
+
+    <RadioButton
+        android:id="@+id/rbIN"
+        android:layout_width="126dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/rbIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv1"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tv1"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="calcular"
+        android:text="@string/bt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toEndOf="@+id/tv_datos"
+        app:layout_constraintTop_toBottomOf="@+id/et_numero" />
+
+    <TextView
+        android:id="@+id/tv_datos"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/tv_datos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_numero" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:onClick="guardar"
+        android:text="@string/bt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbSD" />
 </androidx.constraintlayout.widget.ConstraintLayout>
