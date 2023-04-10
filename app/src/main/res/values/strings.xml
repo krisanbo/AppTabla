@@ -7,4 +7,6 @@
     <string name="rbIn">guardar IN</string>
     <string name="bt1">calcular</string>
     <string name="bt2">guardar</string>
+    <string name="bt3">consultar</string>
+    <string name="et_nombre">Introduce nombre archivo</string>
     </resources>
